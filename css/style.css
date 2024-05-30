@@ -405,6 +405,25 @@ section {
     padding-bottom: 5rem;
 }
 
+/* .filter-btn {
+    font-size: 2.5rem;
+    margin-top: -20px;
+    outline: none;
+    border: 1px solid;
+    border-color: var(--main-color);
+    padding: 8px;
+    font-weight: 300;
+    border-radius: 5px;
+    margin-right: 20px;
+    color: var(--main-color);
+    transition: all 0.3s ease;
+} */
+
+/* .filter-btn:hover, .filter-btn.active {
+    color: var(--text-color);
+    background-color: var(--main-color);
+} */
+
 .projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
@@ -413,14 +432,14 @@ section {
     margin-top: 4.2rem;
 }
 
-.project-card img {
+.card img {
     height: auto;
     width: 100%;
     border-radius: 10px;
     margin-bottom: 1.4rem;
 }
 
-.project-card {
+.card {
     background: var(--bg-color);
     border-radius: 10px;
     padding: 20px;
@@ -432,10 +451,6 @@ section {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
-}
-
-.main-row h3 {
-    font-size: 2.5rem;
 }
 
 .cardContent h1 {
@@ -463,9 +478,43 @@ section {
     padding-top: .5rem;
 }
 
-.project-card:hover {
+.card:hover {
     transform: translateY(-5px) scale(1.03);
     cursor: pointer;
     box-shadow: 0 0 2rem var(--main-color);
 }
+
 /* Here is where the Education & Experience CSS code ends */
+
+/* Here is where the Awards & Certificates CSS code starts */
+.awards {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
+}
+
+.awards .title {
+    font-size: 3rem;
+    color: var(--text-color);
+    margin-top: 4rem;
+}
+
+.awards-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, auto));
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+}
+
+.certificate-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(430px, auto));
+    justify-content: center;
+    align-items: center;
+    gap: 2.3rem;
+    margin-top: 4.2rem;
+}
+/* Here is where the Awards & Certificates CSS code ends */
