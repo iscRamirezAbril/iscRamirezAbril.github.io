@@ -10,10 +10,10 @@
 }
 
 :root {
-    --bg-color: #000000;
-    --second-bg-color: #495057;
+    --bg-color: #041a27;
+    --second-bg-color: #234558;
     --text-color: #ffffff;
-    --main-color: #fca311;
+    --main-color: #90caf9;
 }
 
 html {
@@ -31,7 +31,7 @@ span {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 95vh;
     padding: 10rem 9% 2rem;
 }
 
@@ -86,7 +86,7 @@ section {
 .navbar a:hover,
 .navbar a.active {
     color: var(--main-color);
-    font-weight: 300;
+    font-weight: 500;
 }
 /* Here is where the Navbar CSS code ends */
 
@@ -106,6 +106,7 @@ section {
 
 .profile-pic img {
     width: 30vw;
+    animation: floatImage 4s ease-in-out infinite;
 }
 
 @keyframes floatImage {
@@ -173,7 +174,7 @@ section {
     border-radius: 4rem;
     box-shadow: none;
     font-size: 2.5rem;
-    color: var(--text-color);
+    color: var(--bg-color);
     transition: .5s ease;
 }
 
@@ -541,12 +542,8 @@ section {
     background: var(--second-bg-color);
 }
 
-.contact h2 {
-    margin-bottom: 3rem;
-}
-
 .contact form {
-    max-width: 70rem;
+    max-width: 100rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -569,9 +566,16 @@ section {
     margin: .7rem 0;
 }
 
-.contact form .input-box input {
-    width: 49%;
+.contact form .subject input {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
 }
+
 
 .contact form textarea {
     resize: none;
@@ -660,6 +664,7 @@ section {
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
     }
 
     .navbar.active {
