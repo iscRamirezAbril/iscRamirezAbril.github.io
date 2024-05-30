@@ -488,6 +488,7 @@ section {
     width: 55px;
     height: 55px;
     font-size: 55px;
+    cursor: pointer;
 }
 
 .cardContent p {
@@ -498,7 +499,6 @@ section {
 
 .card:hover {
     transform: translateY(-5px) scale(1.03);
-    cursor: pointer;
     box-shadow: 0 0 2rem var(--main-color);
 }
 
