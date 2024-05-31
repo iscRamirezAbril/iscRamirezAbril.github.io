@@ -393,7 +393,7 @@ section {
 }
 
 .education-content .content .year {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: var(--text-color);
     padding-bottom: .5rem;
 }
@@ -403,7 +403,7 @@ section {
 }
 
 .education-content .content h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .education-content .content p {
@@ -445,8 +445,7 @@ section {
 .projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    align-items: center;
-    gap: 2.3rem;
+    gap: 5rem;
     margin-top: 4.2rem;
 }
 
@@ -468,16 +467,16 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: .5rem;
 }
 
 .cardContent h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
 .cardContent h3 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     font-weight: 100;
 }
 
@@ -485,8 +484,8 @@ section {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     font-size: 55px;
     cursor: pointer;
 }
@@ -494,11 +493,10 @@ section {
 .cardContent p {
     font-size: 2rem;
     font-weight: 300;
-    padding-top: .5rem;
+    padding-top: 2rem;
 }
 
 .card:hover {
-    transform: translateY(-5px) scale(1.03);
     box-shadow: 0 0 2rem var(--main-color);
 }
 
