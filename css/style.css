@@ -543,7 +543,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background-color: var(--bg-color);
+    background-color: var(--second-bg-color);
 }
 
 .footer-text p {
@@ -555,7 +555,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: var(--main-color);
+    background: var(--bg-color);
     border-radius: .8rem;
     transition: .5s ease;
 }
@@ -566,7 +566,7 @@ section {
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--second-bg-color);
+    color: var(--main-color);
 }
 /* Here is where the Footer CSS code ends */
 

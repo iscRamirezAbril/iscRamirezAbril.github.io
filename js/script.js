@@ -43,7 +43,7 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading, .subtitle, form', { origin: 'top' });
-ScrollReveal().reveal('.profile-pic, .skills-row, .title, .projects-content, .home-content h1', { origin: 'left' });
+ScrollReveal().reveal('.profile-pic, .skills-row, .title, .projects-content, .home-content h1, .awards-section, .certificate-section', { origin: 'left' });
 ScrollReveal().reveal('.education-row, .home-content p', { origin: 'right' });
 
 /* |===============| Type Js |===============| */
