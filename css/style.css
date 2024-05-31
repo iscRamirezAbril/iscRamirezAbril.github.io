@@ -445,7 +445,7 @@ section {
 .projects-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    gap: 5rem;
+    gap: 4rem;
     margin-top: 4.2rem;
 }
 
@@ -461,6 +461,7 @@ section {
     border-radius: 10px;
     padding: 20px;
     transition: all .50s ease;
+    border: .5rem solid var(--second-bg-color);
 }
 
 .main-row {
@@ -520,8 +521,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(430px, auto));
     justify-content: center;
-    align-items: center;
-    gap: 2.3rem;
+    gap: 5rem;
     margin-top: 4.2rem;
 }
 
@@ -529,8 +529,7 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(430px, auto));
     justify-content: center;
-    align-items: center;
-    gap: 2.3rem;
+    gap: 5rem;
     margin-top: 4.2rem;
 }
 /* Here is where the Awards & Certificates CSS code ends */
