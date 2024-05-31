@@ -578,20 +578,8 @@ section {
 }
 
 @media (max-width: 991px) {
-    .header {
-        font-size: 2rem 3%;
-    }
-
     section {
         padding: 10rem 3% 2rem;
-    }
-
-    .myProjects {
-        padding-bottom: 7rem;
-    }
-
-    .footer {
-        padding: 2rem 3%
     }
 }
 
@@ -637,10 +625,6 @@ section {
     .profile-pic img {
         width: 70vw;
         margin-top: 4rem;
-    }
-
-    .myProjects h2 {
-        margin-bottom: 3rem;
     }
 
     .projects-content {
