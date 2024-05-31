@@ -508,9 +508,12 @@ section {
 /* Here is where the Awards & Certificates CSS code starts */
 .awards {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     min-height: auto;
     padding-bottom: 10rem;
+    background: var(--bg-color);
 }
 
 .awards .title {
