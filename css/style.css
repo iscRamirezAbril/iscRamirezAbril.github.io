@@ -534,56 +534,6 @@ section {
 }
 /* Here is where the Awards & Certificates CSS code ends */
 
-/* Here is where the Contact CSS code starts */
-.contact {
-    background: var(--second-bg-color);
-}
-
-.contact form {
-    max-width: 100rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.contact form .input-box {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-.contact form .input-box input,
-.contact form textarea {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-.contact form .subject input {
-    width: 100%;
-    padding: 1.5rem;
-    font-size: 1.6rem;
-    color: var(--text-color);
-    background: var(--bg-color);
-    border-radius: .8rem;
-    margin: .7rem 0;
-}
-
-
-.contact form textarea {
-    resize: none;
-}
-
-.contact form .btn {
-    margin-top: 2rem;
-    cursor: pointer;
-}
-/* Here is where the Contact CSS code ends */
-
 /* Here is where the Footer CSS code starts */
 .footer {
     display: flex;
@@ -636,10 +586,6 @@ section {
 
     .myProjects {
         padding-bottom: 7rem;
-    }
-
-    .contact {
-        min-height: auto;
     }
 
     .footer {
@@ -709,10 +655,6 @@ section {
 @media (max-width: 450px) {
     html {
         font-size: 50%;
-    }
-
-    .contact form .input-box input {
-        width: 100%;
     }
 }
 
