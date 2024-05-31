@@ -187,7 +187,7 @@ section {
 /* Here is where the Skills CSS code starts */
 .skills {
     min-height: auto;
-    padding-bottom: 7rem;
+    padding-bottom: 10rem;
     background: var(--second-bg-color);
 }
 
@@ -327,7 +327,7 @@ section {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 
 .education .education-row {
@@ -419,7 +419,7 @@ section {
     align-items: center;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
     background: var(--second-bg-color);
 }
 
@@ -510,7 +510,7 @@ section {
     display: flex;
     flex-direction: column;
     min-height: auto;
-    padding-bottom: 5rem;
+    padding-bottom: 10rem;
 }
 
 .awards .title {
@@ -578,8 +578,20 @@ section {
 }
 
 @media (max-width: 991px) {
+    .header {
+        font-size: 2rem 3%;
+    }
+
     section {
         padding: 10rem 3% 2rem;
+    }
+
+    .myProjects {
+        padding-bottom: 7rem;
+    }
+
+    .footer {
+        padding: 2rem 3%
     }
 }
 
@@ -627,6 +639,10 @@ section {
         margin-top: 4rem;
     }
 
+    .myProjects h2 {
+        margin-bottom: 3rem;
+    }
+    
     .projects-content {
         grid-template-columns: repeat(1, 1fr);
     }
