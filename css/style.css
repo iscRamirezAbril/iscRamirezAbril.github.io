@@ -462,7 +462,13 @@ section {
     padding: 20px;
     transition: all .50s ease;
     border: .5rem solid var(--second-bg-color);
+    transition: .5s ease;
 }
+
+.projects-content .card:hover {
+    transform: scale(1.02);
+}
+
 
 .main-row {
     display: flex;
@@ -495,10 +501,6 @@ section {
     font-size: 2rem;
     font-weight: 300;
     padding-top: 2rem;
-}
-
-.card:hover {
-    box-shadow: 0 0 2rem var(--main-color);
 }
 
 /* Here is where the Education & Experience CSS code ends */
