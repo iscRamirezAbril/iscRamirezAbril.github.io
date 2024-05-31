@@ -649,10 +649,26 @@ section {
     .projects-content {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .awards-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .certificate-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
 
 @media (max-width: 617px) {
     .myProjects {
+        grid-template-columns: 1fr;
+    }
+
+    .awards-section {
+        grid-template-columns: 1fr;
+    }
+
+    .certificate-section {
         grid-template-columns: 1fr;
     }
 }
