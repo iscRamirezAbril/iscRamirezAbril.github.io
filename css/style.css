@@ -558,6 +558,20 @@ section {
     color: var(--error-message);
     text-align: left;
     margin: -5px 0 10px;
+    display: none;
+}
+
+.field.error .item,
+.field.error textarea {
+    border: .1rem solid var(--error-message);
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
 }
 
 .field .item,
@@ -577,7 +591,7 @@ form .input-box {
 }
 
 form .textarea-field .item {
-    margin-top: 1.5rem;
+    resize: none;
 }
 
 .input-box .input-field {
