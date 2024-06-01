@@ -28,6 +28,7 @@
     --second-bg-color: #234558;
     --text-color: #ffffff;
     --main-color: #90caf9;
+    --error-message: #ff6257;
 }
 
 html {
@@ -84,7 +85,7 @@ section {
     font-size: 3rem;
     color: var(--text-color);
     font-weight: 600;
-    cursor: default;
+    cursor: pointer;
     font-family: "Source Code Pro", monospace;
 }
 
@@ -523,6 +524,10 @@ section {
     margin-top: 4.2rem;
 }
 
+.awards .awards-section .card .cardContent .main-row .github-icon i {
+    color: var(--text-color);
+}
+
 .certificate-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(430px, auto));
@@ -532,6 +537,63 @@ section {
 }
 /* Here is where the Awards & Certificates CSS code ends */
 
+/* Here is where the Contact CSS code starts */
+.contact {
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 10rem;
+    background: var(--second-bg-color);
+}
+
+.contact form {
+    max-width: 100rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.field .error-txt {
+    font-size: 1.5rem;
+    color: var(--error-message);
+    text-align: left;
+    margin: -5px 0 10px;
+}
+
+.field .item,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .textarea-field .item {
+    margin-top: 1.5rem;
+}
+
+.input-box .input-field {
+    width: 49.4%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+.contact form .btn {
+    margin-top: 2rem;
+    cursor: pointer;
+}
+/* Here is where the Contact CSS code ends */
+
 /* Here is where the Footer CSS code starts */
 .footer {
     display: flex;
@@ -539,7 +601,7 @@ section {
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background-color: var(--second-bg-color);
+    background-color: var(--bg-color);
 }
 
 .footer-text p {
@@ -551,7 +613,7 @@ section {
     justify-content: center;
     align-items: center;
     padding: .8rem;
-    background: var(--bg-color);
+    background: var(--second-bg-color);
     border-radius: .8rem;
     transition: .5s ease;
 }
@@ -562,7 +624,7 @@ section {
 
 .footer-iconTop a i {
     font-size: 2.4rem;
-    color: var(--main-color);
+    color: var(--bg-color);
 }
 /* Here is where the Footer CSS code ends */
 
@@ -670,6 +732,19 @@ section {
     html {
         font-size: 50%;
     }
+
+    .contact {
+        min-height: auto;
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .footer p {
+        text-align: center;
+        margin-top: 2rem;
+    }
 }
 
 @media (max-width: 365px) {
@@ -684,6 +759,10 @@ section {
     .footer p {
         text-align: center;
         margin-top: 2rem;
+    }
+
+    .contact {
+        min-height: auto;
     }
 }
 /* Here is where the Breakpoints code ends */
