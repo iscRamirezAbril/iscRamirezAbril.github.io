@@ -654,6 +654,14 @@ form .textarea-field .item {
         font-size: 2rem 3%;
     }
 
+    .logo {
+        font-size: 2rem;
+        color: var(--text-color);
+        font-weight: 600;
+        cursor: pointer;
+        font-family: "Source Code Pro", monospace;
+    }
+
     section {
         padding: 10rem 3% 2rem;
     }
