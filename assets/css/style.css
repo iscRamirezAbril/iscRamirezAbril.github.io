@@ -621,6 +621,81 @@ main {
 }
 
 /*-----------------------------------*\
+  #certificates
+\*-----------------------------------*/
+
+.certificates-posts { margin-bottom: 10px; }
+
+.certificates-posts-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.certificates-post-item > a {
+  position: relative;
+  background: var(--border-gradient-onyx);
+  height: 100%;
+  box-shadow: var(--shadow-4);
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.certificates-post-item > a::before {
+  content: "";
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  background: var(--eerie-black-1);
+  z-index: -1;
+}
+
+.certificates-banner-box {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.certificates-banner-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-1);
+}
+
+.certificates-content { padding: 15px; }
+
+.certificates-meta {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 10px;
+}
+
+.certificates-meta :is(.certificates-category, time) {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+
+.certificates-meta .dot {
+  background: var(--light-gray-70);
+  width: 4px;
+  height: 4px;
+  border-radius: 4px;
+}
+
+.certificates-item-title {
+  margin-bottom: 10px;
+  line-height: 1.3;
+  transition: var(--transition-1);
+}
+
+.certificates-post-item > a:hover .certificates-item-title { color: var(--vegas-blue); }
+
+/*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
 
@@ -775,7 +850,6 @@ main {
     font-weight: var(--fw-300);
 }
 
-
 /*-----------------------------------*\
     #RESPONSIVE
 \*-----------------------------------*/
@@ -787,9 +861,10 @@ main {
 @media (min-width: 450px) {
 
 /**
-    * #PORTFOLIO
+    * #PORTFOLIO, certificates
 */
-    .project-img { height: auto; }
+.project-img,
+.certificates-banner-box { height: auto; }
 
 }
 
@@ -950,15 +1025,21 @@ main {
 .skills-item:not(:last-child) { margin-bottom: 25px; }
 
 /**
-    * #PORTFOLIO
+* #PORTFOLIO, certificates
 */
 
-.project-img { border-radius: 16px; }
+.project-img, .certificates-banner-box { border-radius: 16px; }
+
+.certificates-posts-list { gap: 30px; }
+
+.certificates-content { padding: 25px; }
 
 /**
 * responsive larger than 768px screen
 */
 }
+
+
 
 @media (min-width: 768px) {
 
@@ -1012,9 +1093,9 @@ main {
 
 .filter-item button.active { color: var(--vegas-blue); }
 
-/* portfolio and blog grid */
+  /* portfolio and certificates grid */
 
-.project-list { grid-template-columns: 1fr 1fr; }
+  .project-list, .certificates-posts-list { grid-template-columns: 1fr 1fr; }
 
 }
 
