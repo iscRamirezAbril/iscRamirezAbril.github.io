@@ -106,3 +106,15 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+// certificate popup
+document.querySelectorAll(".certificates-post-item").forEach(item => {
+  item.onclick = () => {
+    document.querySelector(".popup-img").style.display = 'block';
+    document.querySelector(".popup-img img").src = item.querySelector("img").getAttribute('src');
+  }
+});
+
+document.querySelector(".popup-img span").onclick = () => {
+  document.querySelector(".popup-img").style.display = 'none';
+}

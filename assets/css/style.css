@@ -695,6 +695,38 @@ main {
 
 .certificates-post-item > a:hover .certificates-item-title { color: var(--vegas-blue); }
 
+.popup-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: hsla(240, 1%, 17%, 0.75);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-img span {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 35px;
+    font-weight: var(--fw-300);
+    color: var(--white-1);
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    object-fit: cover;
+}
+
 /*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
@@ -866,6 +898,10 @@ main {
 .project-img,
 .certificates-banner-box { height: auto; }
 
+.popup-img img {
+    width: 90%;
+}
+
 }
 
 /**
@@ -1034,13 +1070,15 @@ main {
 
 .certificates-content { padding: 25px; }
 
+.popup-img img {
+    width: 65%;
+}
+
+}
+
 /**
 * responsive larger than 768px screen
 */
-}
-
-
-
 @media (min-width: 768px) {
 
 /**
@@ -1093,9 +1131,13 @@ main {
 
 .filter-item button.active { color: var(--vegas-blue); }
 
-  /* portfolio and certificates grid */
+/* portfolio and certificates grid */
 
-  .project-list, .certificates-posts-list { grid-template-columns: 1fr 1fr; }
+.project-list, .certificates-posts-list { grid-template-columns: 1fr 1fr; }
+
+.popup-img img {
+    width: 65%;
+}
 
 }
 
