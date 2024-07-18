@@ -620,6 +620,38 @@ main {
     border-radius: inherit;
 }
 
+.title-wrapper i {
+    color: var(--white-2);
+    font-size: 30px;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.icon-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.icon-wrapper i, .icon-wrapper .svg-icon {
+    display: inline-block;
+    align-items: flex-end;
+    color: var(--light-gray-70);
+    font-size: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.svg-icon {
+    margin-left: -5px;
+    width: 19px;
+    height: 19px;
+    fill: var(--light-gray-70);
+}
+
 /*-----------------------------------*\
   #certificates
 \*-----------------------------------*/
