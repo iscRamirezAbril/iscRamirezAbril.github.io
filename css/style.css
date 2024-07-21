@@ -935,3 +935,93 @@ h3.my-profession {
     padding: 0 50px;
 }
 
+/* -------------------------------------------------------------------------- */
+
+/* -------------------------------------------------------------------------- */
+/*                                MEDIA QUERIES                               */
+/* -------------------------------------------------------------------------- */
+@media (max-width: 1199px) {
+    .aside {
+        left: -270px; /* Inicialmente oculto */
+        transition: all 0.3s ease;
+    }
+
+    .aside.open {
+        left: 0; /* Mostrar cuando se hace clic */
+    }
+
+    .aside .nav-toggler {
+        display: flex;
+        left: 30px;
+        transition: all 0.3s ease;
+    }
+
+    .aside .nav-toggler.open {
+        left: 300px;
+    }
+
+    .section {
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    
+    .section.open {
+        left: 270px;
+    }
+
+    .about .about-content .personal-info .info-item p span {
+        display: block;
+        margin-left: 0;
+    }
+
+    .popup-img img {
+        width: 85%;
+    }
+}
+
+@media (max-width: 991px) {
+    .home .home-info {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home .home-img {
+        display: none;
+    }
+
+    .service .service-item,
+    .portfolio .portfolio-item,
+    .certification-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    /* .contact .contact-info-item {
+        flex: 0 0 50%;
+        max-width: 50%;
+    } */
+
+    .popup-img img {
+        width: 85%;
+    }
+
+} 
+
+@media (max-width: 767px) {
+    .about .about-content .skills,
+    .about .about-content .personal-info,
+    .about .about-content .education,
+    .about .about-content .experience,
+    .service .service-item,
+    .portfolio .portfolio-item,
+    .certification-item,
+    .contact .contact-info-item,
+    .contact .contact-form .col-6 {
+        
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .popup-img img {
+        width: 85%;
+    }
+}
