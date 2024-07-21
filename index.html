@@ -1,11 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abril Ramirez</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abril Ramirez</title>
+
+    <!-- PAGE LOGO -->
+    <link rel="shortcut icon" href="/images/logo.ico" type="image/x-icon">
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/skins/color-4.css">
+
+    <!-- Style SWitcher -->
+    <link rel="stylesheet" href="./css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="./css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="./css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="./css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="./css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="./css/style-switcher.css">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 </head>
 <body>
-  
+
+    <!-- STYLE SWITCHER START -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas "></i>
+        </div>
+        <h4>Theme Color</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')" ></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')" ></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')" ></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')" ></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')" ></span>
+        </div>
+    </div>
+    <!-- STYLE SWITCHER END -->
+
+    <!-- JS FILES -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
 </body>
 </html>
