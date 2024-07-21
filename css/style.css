@@ -319,3 +319,100 @@ ul {
 .aside .nav li a i {
     margin-right: 15px;
 }
+
+/* -------------------------------------------------------------------------- */
+/*                                HOME SECTION                                */
+/* -------------------------------------------------------------------------- */
+.home {
+    display: flex;
+    min-height: 100vh;
+    color: var(--text-black-900);
+}
+
+/* ---------------------------------- INFO ---------------------------------- */
+
+.home .home-info {
+    flex: 0 0 60%;
+}
+
+h3.hello {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+h3.hello span {
+    font-family: 'Clicker Script', cursive;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--skin-color);
+}
+
+h3.my-profession {
+    font-size: 30px;
+    margin: 15px 0
+}
+
+.typing {
+    color: var(--skin-color);
+}
+
+.home-info p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+
+.home-info div {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: var(--text-black-700);
+}
+
+.home-info .row .btn {
+    display: flex;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--skin-color);
+    background-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    padding-left: 16px;
+}
+
+/* ---------------------------------- IMAGE --------------------------------- */
+
+.home-img {
+    flex: 0 0 40%;
+    max-width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+.home-img::before {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    left: -20px;
+    top: -40px;
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
+}
+
+.home-img::after {
+    content: '';
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    right: 20px;
+    bottom: -40px;
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
+}
+
+.home .home-img img {
+    margin: auto;
+    border-radius: 5px;
+    height: 400px;
+}
