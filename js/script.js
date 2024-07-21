@@ -82,3 +82,15 @@ function asideSectionTogglerBtn() {
         allSection[i].classList.toggle("open");
     }
 }
+
+/* -------------------------- Certificate PopUp ------------------------- */
+document.querySelectorAll(".certification-item").forEach(item => {
+    item.onclick = () => {
+      document.querySelector(".popup-img").style.display = 'block';
+      document.querySelector(".popup-img img").src = item.querySelector("img").getAttribute('src');
+    }
+});
+  
+document.querySelector(".popup-img span").onclick = () => {
+    document.querySelector(".popup-img").style.display = 'none';
+}
