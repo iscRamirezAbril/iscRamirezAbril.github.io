@@ -4,7 +4,7 @@
 Here you're going to know all about my projects and education journey.
 
 <p align="center">
-  <img src="https://github.com/iscRamirezAbril/iscRamirezAbril.github.io/blob/main/assets/images/img_readme.jpg" width = "1250"/>
+  <img src="https://github.com/iscRamirezAbril/iscRamirezAbril.github.io/blob/main/images/readme/portfolio-1.jpeg" width = "1250"/>
 </p>
 
 ### Technologies used
