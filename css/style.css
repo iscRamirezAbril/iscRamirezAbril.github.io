@@ -643,6 +643,7 @@ h3.my-profession {
     cursor: pointer;
     background-color: var(--background-color);
 }
+
 .certification-img img {
     width: 100%;
     display: block;
@@ -809,6 +810,27 @@ h3.my-profession {
     color: var(--text-black-900);
 }
 
+.portfolio-title-date {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-title-date h4 {
+    margin: 0;
+}
+
+.portfolio-date {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: var(--text-black-700);
+}
+
+.portfolio-date i {
+    margin-right: 5px;
+}
+
 .portfolio-buttons {
     display: flex;
     margin-top: 10px;
@@ -942,8 +964,15 @@ h3.my-profession {
 /* -------------------------------------------------------------------------- */
 @media (max-width: 1199px) {
     .aside {
-        left: -270px; /* Inicialmente oculto */
+        left: -270px;
         transition: all 0.3s ease;
+    }
+
+    .aside .logo {
+        position: absolute;
+        top: 50px;
+        font-size: 30px;
+        text-transform: capitalize;
     }
 
     .aside.open {
@@ -980,6 +1009,10 @@ h3.my-profession {
 }
 
 @media (max-width: 991px) {
+    .aside .logo {
+        display: none;
+    }
+
     .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
@@ -1007,6 +1040,13 @@ h3.my-profession {
 } 
 
 @media (max-width: 767px) {
+    .aside .logo {
+        position: absolute;
+        top: 50px;
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
     .about .about-content .skills,
     .about .about-content .personal-info,
     .about .about-content .education,
