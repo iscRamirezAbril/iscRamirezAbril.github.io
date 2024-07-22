@@ -481,6 +481,7 @@ h3.my-profession {
 
 .about .about-content .personal-info .buttons .btn {
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 /* --------------------------------- About SKILLS --------------------------------- */
@@ -622,6 +623,12 @@ h3.my-profession {
     font-size: 24px;
     color: var(--skin-color);
     margin: 10px;
+}
+
+.svg-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--skin-color);
 }
 
 /* ---------------------- About Certifications ---------------------- */
