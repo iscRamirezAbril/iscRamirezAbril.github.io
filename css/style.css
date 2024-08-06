@@ -802,7 +802,7 @@ h3.my-profession {
     margin-left: 2px;
 }
 
-.portfolio-buttons .btn, .award-buttons i {
+.portfolio-buttons .btn i, .award-buttons .btn i {
     padding-right: 10px;
 }
 
