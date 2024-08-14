@@ -655,6 +655,11 @@ h3.my-profession {
     background-color: var(--background-color);
 }
 
+.certification-item-inner:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
 .certification-img img {
     width: 100%;
     display: block;
@@ -734,7 +739,6 @@ h3.my-profession {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
-    cursor: pointer;
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
