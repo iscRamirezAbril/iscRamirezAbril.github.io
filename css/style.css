@@ -714,6 +714,10 @@ h3.my-profession {
 /* -------------------------------------------------------------------------- */
 /*                              PORTFOLIO SECTION                             */
 /* -------------------------------------------------------------------------- */
+.portfolio-item.hidden {
+    display: none;
+}
+
 .portfolio .container {
     padding-bottom: 40px;
 }

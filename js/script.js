@@ -94,3 +94,40 @@ document.querySelectorAll(".certification-item").forEach(item => {
 document.querySelector(".popup-img span").onclick = () => {
     document.querySelector(".popup-img").style.display = 'none';
 }
+
+/* -------------------------- "Show more" & "Show less" button ------------------------- */
+document.addEventListener("DOMContentLoaded", function () {
+    const projects = document.querySelectorAll('.portfolio-item');
+    const showMoreBtn = document.getElementById('show-more-btn');
+    let itemsToShow = 6;
+
+    projects.forEach((project, index) => {
+        if (index >= itemsToShow) {
+            project.classList.add('hidden');
+        }
+    });
+
+    showMoreBtn.addEventListener('click', function () {
+        const hiddenProjects = document.querySelectorAll('.portfolio-item.hidden');
+
+        if (hiddenProjects.length > 0) {
+            hiddenProjects.forEach((project, index) => {
+                if (index < itemsToShow) {
+                    project.classList.remove('hidden');
+                }
+            });
+
+            if (document.querySelectorAll('.portfolio-item.hidden').length === 0) {
+                showMoreBtn.textContent = 'Show less';
+            }
+        } else {
+            projects.forEach((project, index) => {
+                if (index >= itemsToShow) {
+                    project.classList.add('hidden');
+                }
+            });
+
+            showMoreBtn.textContent = 'Show more';
+        }
+    });
+});
