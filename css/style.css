@@ -786,19 +786,18 @@ h3.my-profession {
 
 .portfolio-buttons, .award-buttons {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 
 .portfolio-buttons .btn, .award-buttons .btn {
-    font-size: 167x;
+    font-size: 16px;
     font-weight: 600;
     padding-left: 0px;
     color: var(--skin-color);
     display: inline-block;
     white-space: nowrap;
-    border: 15px;
     background-color: transparent;
-    margin-left: 10px;
     transform: none;
 }
 
@@ -811,7 +810,7 @@ h3.my-profession {
 }
 
 .portfolio-buttons .btn i, .award-buttons .btn i {
-    padding-right: 10px;
+    padding-right: 6px;
 }
 
 /* -------------------------------------------------------------------------- */
